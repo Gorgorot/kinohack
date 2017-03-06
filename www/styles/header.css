@@ -1,0 +1,92 @@
+header{
+    background-color: #01bfd2;
+    height: 57px;
+}
+
+.but-cont{
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.but-cont a:hover{
+  color: #333;
+}
+
+.menu2 .navigation{
+    display: inline-block;
+}
+
+.but-cont li{
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.img-cont{
+    display: inline-block;
+    position: absolute;
+    top:12px;
+    right:140px;
+    margin-right: 25px;
+    width: 140px;
+}
+
+.personal{
+    display: inline-block;
+    position:absolute;
+    top: 20px;
+    right: 10px;
+}
+
+header form{
+    display: inline-block;
+}
+
+.but-cont a{
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    transition: 0.1s transform;
+    color: white;
+}
+
+.menu2 a:hover{
+    background-color: #e0b227;
+    transform: skew(-15deg);
+}
+
+.menu2 a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    transition: 0.1s transform;
+    color: white;
+}
+
+.genres {
+    position: relative;
+}
+
+.drop-menu{
+    position: absolute;
+    opacity: 0;
+    top:-999999em;
+    background: rgba(151, 41, 157, 0.8);
+    z-index: 8;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s opacity;
+}
+
+.genres:hover .drop-menu{
+    opacity:1;
+    top:100%;
+}
+
+.drop-menu li{
+    list-style: none;
+    padding: 0;
+}
+
+.drop-menu a{
+    display: block;
+}

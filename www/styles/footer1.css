@@ -1,0 +1,17 @@
+footer{
+    display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #01bfd2;
+  width:100%;
+  margin-top:10px;
+  color: #fff;
+}
+
+.company,  .licensed{
+  width: 300px;
+}
+.socials1{
+  color: #fff;
+  text-decoration: none;
+}

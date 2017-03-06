@@ -1,0 +1,212 @@
+/*
+#content{
+    margin-left:100px;
+    margin-right:100px;
+    display: inline-block;
+    width: 80%;
+    float:left;
+}
+
+#film img{
+    display:block;
+    width:240px;
+    height:360px;
+    float:left;
+    margin-right:30px;
+    border: 1px solid;
+    border-radius:10px;
+}
+
+#film{
+    margin-bottom:25px;
+    display: inline-block;
+}
+
+label{
+    display:inline-block;
+    font-size: 14pt;
+    margin-bottom: 2px;
+}
+
+#title{
+    font-size: 19pt;
+}
+*/
+
+/*
+
+#content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+
+}
+
+#continent{
+  flex-grow: 2;
+  margin-right: 5px;
+}
+*/
+.navigation a{
+    
+    background: red;
+}
+
+
+.content1{
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.continent1{
+  width: 200px;
+  flex-grow: 2;
+  margin-right: 5px;
+ 
+}
+.saidbar1{
+    background: rgba(151, 41, 157, 0.5);
+  color: #fff;
+  width: 200px;
+  height: 50%;
+  margin-left: 10px;
+}
+
+.header{
+  margin-left:50px;
+}
+
+.img-cont{
+  margin-right: 100px;
+}
+
+
+.genres{
+  display: none;
+}
+
+.head{
+  background-color:rgba(198, 158, 53, 0);display:inline-block;color:#fff; font-size: 64;margin-top:17px;padding-left:35px;padding-bottom:10px;padding-right:35px;margin-bottom:20px;margin-left:100px;margin-right:100px;
+}
+
+.menu1{
+  background-color:rgba(151, 41, 157, 0.5);margin-left:100px;margin-right:100px;
+}
+
+.title1{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.side{
+    list-style-type: circle;
+    margin-left: -5px;
+    padding-right: 15px;
+}
+
+.side a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#film img{
+    display:block;
+    width:240px;
+    height:360px;
+    float:left;
+    margin-right:30px;
+    border: 1px solid;
+    border-radius:10px;
+}
+
+iframe{
+    border: 1px solid;
+}
+
+#film{
+    margin-bottom:25px;
+    display: inline-block;
+}
+
+label{
+    display:inline-block;
+    font-size: 14pt;
+    margin-bottom: 2px;
+}
+
+#title{
+    font-size: 19pt;
+}
+
+/*Адаптив*/
+@media screen and (max-width: 1200px){
+  .content1{
+    margin: 0 50px;
+  }
+  .img-cont{
+    margin-right: 50px;
+  }
+  .menu1, .head{
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 1050px){
+  .form-wrapper{
+   padding: 5 0 5 0;
+  }
+  .img-cont{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 870px){
+  .saidbar1{
+    display: none;
+  }
+  .continent1{
+    margin-right: 0;
+  }
+    .genres{
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 830px){
+  .but-cont{
+    margin: 0;
+    padding: 0;
+  }
+  header{
+    height: 80px;
+  }
+
+}
+
+@media screen and (max-width: 630px){
+  .content1{
+    margin: 0 10px;
+  }
+  .menu1, .head{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .header{
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 520px){
+  .title1{
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  .menu2{
+    padding: 0;
+  }
+}
