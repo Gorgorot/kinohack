@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Мар 02 2017 г., 19:20
+-- Время создания: Мар 06 2017 г., 15:27
 -- Версия сервера: 5.5.25
 -- Версия PHP: 5.6.19
 
@@ -67,14 +67,30 @@ CREATE TABLE IF NOT EXISTS `users` (
   `e-mail` varchar(36) NOT NULL,
   `id` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=18 ;
 
 --
 -- Дамп данных таблицы `users`
 --
 
 INSERT INTO `users` (`login`, `password`, `e-mail`, `id`) VALUES
-(' admin', 'ce5e79cf85afb7b95969', 'alekseev9797@yandex.ru', 1);
+(' admin', 'ce5e79cf85afb7b95969', 'alekseev9797@yandex.ru', 1),
+(' asd', '58cf703f664397ec4f0a', 'asd@yandex.ru', 2),
+(' qwe', '58cf703f664397ec4f0a', 'qwe@yandex.ru', 3),
+(' qwe', '0985251f3d13076beec6', 'qwe@yandex.ru', 4),
+(' zxc', '58cf703f664397ec4f0a', 'zxc@yandex.ru', 5),
+(' qwe', '58cf703f664397ec4f0a', 'zxc@yandex.ru', 6),
+(' asd', '58cf703f664397ec4f0a', 'asd@yandex.ru', 7),
+(' asd', '58cf703f664397ec4f0a', 'asd@yandex.ru', 8),
+(' asd', '58cf703f664397ec4f0a', 'asd@yandex.ru', 9),
+(' asd', '58cf703f664397ec4f0a', 'asd@yandex.ru', 10),
+(' asd', '58cf703f664397ec4f0a', 'asd@yandex.ru', 11),
+(' asd', '58cf703f664397ec4f0a', 'asd@yandex.ru', 12),
+(' asd', '58cf703f664397ec4f0a', 'asd@yandex.ru', 13),
+(' asd', '58cf703f664397ec4f0a', 'asd@yandex.ru', 14),
+(' asd', '32e1b88d83c23828f861', 'asd@yandex.ru', 15),
+(' asd', '58cf703f664397ec4f0a', 'asd@yandex.ru', 16),
+(' asd', '58cf703f664397ec4f0a', 'asd@yandex.ru', 17);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

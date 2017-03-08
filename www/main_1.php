@@ -31,6 +31,7 @@ if(isset($_SESSION['reg_sucssess']))
 </style>
 
 <body>
+
     <script>
         jQuery(document).ready(function() {
             $('.bxslider').bxSlider({
@@ -59,9 +60,26 @@ if(isset($_SESSION['reg_sucssess']))
                 <a href=#><img src="img/email.png" width="32px"></a>
             </div>
             <div class="personal">
-                <a href="libs/autorize.php">Авторизация</a>/<a href="libs/signup.php">Регистрация</a>
+                <a id="auto" href="libs/autorize.php">Авторизация/</a><a id="reg" href="libs/signup2.php">Регистрация</a>
+                <a id="user" style="display: none;"></a><a id="exit" style="display: none;" href="libs/logout.php">/Выйти</a>
             </div>
-           
+        <script type="text/javascript">
+        var autorize="<?php echo $_SESSION['yes_enter']; ?>";
+        console.log(autorize);
+        if (autorize=="1")
+        {
+            document.getElementById('user').style.display="inline-block";
+            document.getElementById('user').innerHTML="<?php echo $_SESSION['inform'].$_SESSION['login'];
+                                                             unset($_SESSION['inform']); ?>"
+            document.getElementById('auto').style.display="none";
+            document.getElementById('reg').style.display="none";
+            document.getElementById('exit').style.display="inline-block";
+        }
+        else
+        {
+        
+        }
+        </script>   
         </div>
     </header>
     <div class="head">kinohack</div>
@@ -194,5 +212,4 @@ if(isset($_SESSION['reg_sucssess']))
         </div>
     </footer>
 </body>
-
 </html>
