@@ -1,0 +1,156 @@
+
+.tzSelect{
+	
+	/* Контейнер для нового элемента select */
+	
+	height:34px;
+	display:inline-block;
+	min-width:155px;
+	position:relative;
+	
+	/* Предварительная загрузка фонового изображения для выпадающих пунктов */
+	background:url("../img/dropdown_slice.png") no-repeat -99999px;
+}
+
+.tzSelect .selectBox{
+	position:absolute;
+	
+	height:100%;
+	width:100%;
+	
+	/* Установка шрифта */
+	
+	font:13px/34px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align:center;
+	text-shadow:1px 1px 0 #EEEEEE;
+	color:#666666;
+
+	/* Использование множественных фонов CSS3 */
+	
+	background:url('img/select_slice.png') repeat-x #ddd;
+	background-image:url('img/select_slice.png'),url('img/select_slice.png'),url('img/select_slice.png'),url('img/select_slice.png');
+	background-position:0 -136px, right -204px, 50% -68px, 0 0;
+	background-repeat: no-repeat, no-repeat, no-repeat, repeat-x;
+	
+	cursor:pointer;
+	
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+
+.tzSelect .selectBox:hover,
+.tzSelect .selectBox.expanded{
+	background-position:0 -170px, right -238px, 50% -102px, 0 -34px;
+	color:#2c5667;
+	text-shadow:1px 1px 0 #9bc2d0;
+}
+
+.dropDown{
+    padding-left:0px;
+    margin-top: 0px;
+    height: 100px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    scrollbar-face-color:#5997CA; 
+
+    scrollbar-shadow-color: #ffffff;
+    
+    scrollbar-highlight-color: #ffffff;
+    
+    scrollbar-3dlight-color: #5997CA;
+    
+    scrollbar-darkshadow-color: #5997CA; 
+    
+    scrollbar-track-color: #F6F6F6;
+    
+    scrollbar-arrow-color: #F6F6F6; 
+}
+.dropDown::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+.dropDown::-webkit-scrollbar-track {
+    background: #5D0093;
+}
+ 
+.dropDown::-webkit-scrollbar-thumb {
+    background:red;
+    border-radius: 10px;
+    width:5px; 
+}
+.tzSelect .dropDown{
+	position:absolute;
+	top:40px;
+	left:0;
+	width:100%;
+	border:1px solid #32333b;
+	border-width:0 1px 1px;
+	list-style:none;
+	
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	
+	-moz-box-shadow:0 0 4px #111;
+	-webkit-box-shadow:0 0 4px #111;
+	box-shadow:0 0 4px #111;
+}
+
+
+.tzSelect li{
+    text-align:center;
+	cursor:pointer;
+	position:relative;
+    background: #DE79FF;
+    transition: background 1s;
+}
+
+.tzSelect li:hover{
+	background: #B34EE9;
+}
+
+.tzSelect li span{
+
+}
+
+.tzSelect li i{
+	color:#999999;
+	display:block;
+	font-size:12px;
+}
+
+
+/* Стили страницы */
+
+#footer{
+	background-color:#212121;
+	position:fixed;
+	width:100%;
+	height:70px;
+	bottom:0;
+	left:0;
+}
+
+.tri{
+	border-color:transparent transparent #212121;
+	border-style:solid;
+	border-width:20px 17px;
+	height:0;
+	left:50%;
+	margin:-40px 0 0 -400px;
+	position:absolute;
+	top:0;
+	width:0;
+}
+
+#footer h1{
+	font-size:20px;
+	font-weight:normal;
+	left:50%;
+	margin-left:-400px;
+	padding:25px 0;
+	position:absolute;
+	width:600px;
+}
+

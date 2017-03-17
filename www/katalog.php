@@ -8,6 +8,7 @@
     <link rel="icon" href="img/movie.png" type="images/x-icon"/>
     <link rel="stylesheet" type="text/css" href="styles/style_katalog.css">
     <link rel="stylesheet" type="text/css" href="styles/footer1.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles_for_select.css" />
 </head>
 <style>
 body {
@@ -66,7 +67,24 @@ body {
 
 <div class="content1">
     <div class="continent1">
-
+<form method="post" action="libs/test.php">
+    <select name="fancySelect" class="makeMeFancy">
+        <option value="0" selected="selected" data-skip="1">Выберите год</option>
+    	<option value="1" data-html-text="2017"></option>
+    	<option value="2" data-html-text="2016"></option>
+        <option value="3" data-html-text="2015"></option>
+        <option value="4" data-html-text="2014"></option>
+        <option value="4" data-html-text="2013"></option>
+        <option value="4" data-html-text="2012"></option>
+        <option value="4" data-html-text="2011"></option>
+        <option value="4" data-html-text="2010"></option>
+        <option value="4" data-html-text="2009"></option>
+        <option value="4" data-html-text="2008"></option>
+        <option value="4" data-html-text="2007"></option>
+        <option value="4" data-html-text="2006"></option>
+        <option value="4" data-html-text="Позже 2006"></option>
+    </select>
+</form>
 <h1>Каталог фильмов</h1>
 <h3 id="filter">Выбранный фильтр:</h3>
 <?php
@@ -287,7 +305,7 @@ else if (($find_in_genres==true)||(isset($_GET['find_in_genres'])))
     {
         echo "<div id='film' style='display:inline-block; float:left;'><img src='img/films/$image_mass[$i]'>
         <label id='title'>$name_mass[$i]</label><br><label><b>Жанры:</b></label> $genres_mass[$i], $genres2_mass[$i], $genres3_mass[$i]<br>
-        <label><b>Описание:</b></label><br>$des_mass[$i]<br><br></div>";
+        <label><b>Описание:</b></label><br>$des_mass[$i]<br><br><a href=film.php?film_name=$name_mass[$i]>Смотреть подробнее</a></div>";
     }
     $genr=$_GET['genr'];
     echo "<div class='nav'>";
@@ -414,5 +432,6 @@ if (typeof(genr)!="number")
 </script>
 
 <script src="remodal/remodal.min.js"></script>
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+<script src="js/script.js"></script>
 </html>
